@@ -4,7 +4,7 @@ import { Icon, Logo, UserImage } from "../../constants/imagePath";
 import { Link } from "react-router-dom";
 import { cn } from "../../helper/HelperFunctions";
 import SearchInput from "../SearchInput";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "../Button";
 import useMediaQuery from "../../customHooks/useMediaQuery";
 
@@ -30,7 +30,11 @@ export default function Header() {
     { label: "Notifications", value: "/" },
     ...(isMobile ? [{ label: "Resume Builder", value: "/" }] : []),
   ];
-
+  useEffect(() => {
+    if (!isMobile) {
+      setOpenDrawer(false);
+    }
+  }, [isMobile]);
   return (
     <>
       <nav className={classes.mainWrapper}>
