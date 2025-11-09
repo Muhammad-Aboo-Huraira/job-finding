@@ -1,4 +1,3 @@
-import { Container } from "react-bootstrap";
 import classes from "./Header.module.css";
 import { Icon, Logo, UserImage } from "../../constants/imagePath";
 import { Link } from "react-router-dom";
@@ -7,8 +6,6 @@ import SearchInput from "../SearchInput";
 import { useEffect, useState } from "react";
 import { Button } from "../Button";
 import useMediaQuery from "../../customHooks/useMediaQuery";
-
-// Drawer library
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 
