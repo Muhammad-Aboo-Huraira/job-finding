@@ -51,7 +51,7 @@ export default function FindJobs() {
           />
           <div className={classes.similarJobsTabs}>
             <p>Similar:</p>
-            <div>
+            <div className={classes.similarJobsTabsBtns}>
               <Button label={"Frontend"} variant="bordered" />
               <Button label={"Backend"} variant="bordered" />
               <Button label={"Graphic Designer"} variant="bordered" />

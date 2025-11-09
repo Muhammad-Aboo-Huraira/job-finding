@@ -46,10 +46,10 @@
     font-size: 14px;
     font-weight: 500;
   }
-  & > div {
-    display: flex;
-    gap: 12px;
-  }
+}
+.similarJobsTabsBtns {
+  display: flex;
+  gap: 12px;
 }
 .cardsSection {
   display: flex;
