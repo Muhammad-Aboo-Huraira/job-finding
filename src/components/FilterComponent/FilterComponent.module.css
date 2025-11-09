@@ -1,0 +1,12 @@
+.mainWrapper {
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--white-color);
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+
+  & > div:first-child {
+    flex: 1;
+  }
+}

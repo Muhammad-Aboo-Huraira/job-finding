@@ -1,0 +1,8 @@
+.mainWrapper {
+  padding-block: 20px;
+  height: calc(100vh - 85px);
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}

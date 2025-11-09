@@ -1,11 +1,11 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense } from "react";
+import { Loader } from "./components/Loader";
 
-const FindJobs = lazy(() => import('./pages/FindJobs'));
+const FindJobs = lazy(() => import("./pages/FindJobs"));
 
 function App() {
-  
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loader />}>
       <FindJobs />
     </Suspense>
   );

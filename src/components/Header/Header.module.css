@@ -1,0 +1,81 @@
+.mainWrapper {
+  background: #ffffff;
+  padding-block: 12px;
+  display: flex;
+}
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+.contentWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  @media screen and (max-width: 400px) {
+    gap: 10px;
+  }
+}
+.innerWrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  @media screen and (max-width: 400px) {
+    gap: 5px;
+  }
+}
+.linksWrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-wrap: nowrap;
+}
+.navLink {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+.activeLink {
+  color: var(--main-color);
+  font-weight: 600;
+}
+.userImage {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.drawerWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.drawerLogo {
+  width: 100%;
+  height: 50px;
+  margin-block: 20px;
+}
+.drawerLinks {
+  height: calc(100vh - 30px);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+.drawerLink {
+  font-size: 18px;
+  padding: 12px 0;
+  text-decoration: none;
+  color: #333;
+}
+
+.drawerLink:hover {
+  color: var(--main-color);
+}

@@ -1,32 +1,49 @@
 @font-face {
-  font-family: 'Neue Haas Display';
-  src: url('./assets/fonts/NeueHaasDisplayRoman.ttf') format('truetype');
+  font-family: "Neue Haas Display";
+  src: url("./assets/fonts/NeueHaasDisplayRoman.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Neue Haas Display';
-  src: url('./assets/fonts/NeueHaasDisplayMedium.ttf') format('truetype');
+  font-family: "Neue Haas Display";
+  src: url("./assets/fonts/NeueHaasDisplayMedium.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
+:root {
+  --main-color: #0154aa;
+  --nav-link-color: #737a91;
+  --search-input-bg: #f6f9ff;
+  --white-color: #ffffff;
 
+  --text-color: #333333;
+  --light-text-color: #585d6e;
+
+  --border-color: #E9ECEF;
+}
 body {
   margin: 0;
-  font-family: 'Neue Haas Display';
+  font-family: "Neue Haas Display";
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f4f4f4;
+}
+p {
+  margin: 0;
+  color: var(--text-color);
 }
 
 code {
-  font-family: 'Neue Haas Display';
+  font-family: "Neue Haas Display";
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 600;
 }
 
